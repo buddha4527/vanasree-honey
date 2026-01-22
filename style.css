@@ -8,63 +8,54 @@
 body {
   line-height: 1.7;
   color: #2c2c2c;
-  background: #ffffff;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
 }
 
 .hero {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") center/cover no-repeat;
   position: relative;
-  background: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef") center/cover no-repeat;
-  height: 90vh;
   display: flex;
   align-items: center;
-  color: #fff;
+  justify-content: center;
 }
 
 .hero .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .hero-content {
   position: relative;
   text-align: center;
-  z-index: 2;
+  color: #fff;
+  padding: 20px;
 }
 
 .hero h1 {
   font-size: 3.5rem;
-  margin-bottom: 10px;
 }
 
 .tagline {
   font-size: 1.3rem;
-  font-weight: 600;
+  margin-top: 10px;
 }
 
 .subtitle {
-  margin: 15px 0 30px;
-  font-size: 1.1rem;
+  margin: 20px 0 30px;
 }
 
 .section {
-  padding: 70px 0;
+  padding: 80px 20px;
 }
 
 .section.light {
   background: #f2f6f3;
 }
 
-h2 {
-  margin-bottom: 20px;
-  color: #1f3d2b;
-  font-size: 2rem;
+.container {
+  max-width: 1100px;
+  margin: auto;
 }
 
 .grid {
@@ -77,11 +68,42 @@ h2 {
 .grid img {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
-.features li {
-  margin-bottom: 10px;
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.features div {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 26px;
+  background: #2e6b4f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  margin: 5px;
+  font-weight: 600;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+.btn.outline-dark {
+  background: transparent;
+  border: 2px solid #2e6b4f;
+  color: #2e6b4f;
 }
 
 .note {
@@ -92,35 +114,37 @@ h2 {
 .highlight {
   background: #e7efe9;
   padding: 12px;
-  border-left: 5px solid #2e6b4f;
-  margin: 15px 0;
-}
-
-.cta {
-  margin-top: 20px;
-}
-
-.btn {
   display: inline-block;
-  padding: 14px 24px;
-  background: #2e6b4f;
-  color: #fff;
-  text-decoration: none;
-  margin: 5px;
-  border-radius: 30px;
-  font-weight: 600;
+  margin: 15px 0;
+  border-left: 5px solid #2e6b4f;
 }
 
-.btn.outline {
-  background: transparent;
-  border: 2px solid #fff;
+.center {
+  text-align: center;
+}
+
+.forest {
+  position: relative;
+  background: url("https://images.unsplash.com/photo-1511497584788-876760111969") center/cover no-repeat;
+  color: #fff;
+}
+
+.forest .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.forest-content {
+  position: relative;
+  text-align: center;
 }
 
 .footer {
   background: #1f3d2b;
   color: #fff;
   text-align: center;
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 
 .footer .small {
