@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
@@ -12,33 +12,32 @@ body {
 
 .hero {
   height: 100vh;
-  background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") center/cover no-repeat;
+  background: url("images/hero.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.hero .overlay {
+.overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0,0,0,0.6);
 }
 
 .hero-content {
   position: relative;
   text-align: center;
   color: #fff;
-  padding: 20px;
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .tagline {
-  font-size: 1.3rem;
   margin-top: 10px;
+  font-size: 1.2rem;
 }
 
 .subtitle {
@@ -68,7 +67,6 @@ body {
 .grid img {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
 .features {
@@ -92,7 +90,6 @@ body {
   text-decoration: none;
   border-radius: 30px;
   margin: 5px;
-  font-weight: 600;
 }
 
 .btn.outline {
@@ -106,9 +103,8 @@ body {
   color: #2e6b4f;
 }
 
-.note {
-  margin-top: 10px;
-  font-size: 0.9rem;
+.center {
+  text-align: center;
 }
 
 .highlight {
@@ -116,28 +112,18 @@ body {
   padding: 12px;
   display: inline-block;
   margin: 15px 0;
-  border-left: 5px solid #2e6b4f;
-}
-
-.center {
-  text-align: center;
 }
 
 .forest {
-  position: relative;
-  background: url("https://images.unsplash.com/photo-1511497584788-876760111969") center/cover no-repeat;
+  background: url("images/forest.jpg") center/cover no-repeat;
   color: #fff;
-}
-
-.forest .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
+  padding: 100px 20px;
+  position: relative;
+  text-align: center;
 }
 
 .forest-content {
   position: relative;
-  text-align: center;
 }
 
 .footer {
@@ -155,9 +141,5 @@ body {
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 2.4rem;
   }
 }
